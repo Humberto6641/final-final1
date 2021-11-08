@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class DocenteService {
 
-  URL = "https://res-api-v2.herokuapp.com";
+  URL = "https://api-final-su.herokuapp.com";
   constructor(private http : HttpClient) { }
 
   getDocente(): Observable<TbDocenteItem[]>{

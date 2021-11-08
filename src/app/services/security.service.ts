@@ -1,4 +1,4 @@
-//import { Usuario } from './../interface/usuario';
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -7,10 +7,10 @@ import { Injectable } from '@angular/core';
 })
 export class SecurityService {
 
-  URL = "https://res-api-v2.herokuapp.com";
+  URL = "https://api-final-su.herokuapp.com";
   constructor(private http : HttpClient) { }
 
-  login(user: string ){      //userName
+  login(user: string ){
     return this.http.post<any>(this.URL + '/login',user);
   }
 

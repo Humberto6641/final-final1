@@ -8,7 +8,7 @@ import { TbPersonaItem } from '../private/T_Persona/tb-persona/tb-persona-dataso
 })
 export class PersonaService {
 
-  URL = "https://res-api-v2.herokuapp.com";
+  URL = "https://api-final-su.herokuapp.com";
   constructor(private http : HttpClient) { }
 
   getPersona(): Observable<TbPersonaItem[]>{
